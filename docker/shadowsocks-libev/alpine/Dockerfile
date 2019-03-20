@@ -1,12 +1,12 @@
 # Dockerfile for shadowsocks-libev based alpine
-# Copyright (C) 2018 Teddysun <i@teddysun.com>
+# Copyright (C) 2018 - 2019 Teddysun <i@teddysun.com>
 # Reference URL:
 # https://github.com/shadowsocks/shadowsocks-libev
 
 FROM alpine:latest
 LABEL maintainer="Teddysun <i@teddysun.com>"
 
-ENV LIBEV_VER 3.2.0
+ENV LIBEV_VER 3.2.5
 ENV LIBEV_NAME shadowsocks-libev-${LIBEV_VER}
 ENV LIBEV_RELEASE https://github.com/shadowsocks/shadowsocks-libev/releases/download/v${LIBEV_VER}/${LIBEV_NAME}.tar.gz
 
